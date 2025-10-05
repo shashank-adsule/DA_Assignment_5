@@ -63,15 +63,18 @@ To make visualization interpretable:
 The following libraries were used in the analysis:
 
 ```bash
-pandas             # data manipulation
-numpy              # numerical operations
-matplotlib         # data visualization
-seaborn            # plotting aesthetics
-
-scikit-learn       # preprocessing, t-SNE, Isomap, metrics
-    ├── preprocessing (StandardScaler)
-    ├── manifold (TSNE, Isomap)
-    └── metrics (pairwise_distances, trustworthiness)
+os                  # file path handling and system operations
+pandas              # data manipulation and analysis
+numpy               # numerical operations and array handling
+matplotlib          # data visualization
+scipy               # statistical operations and .arff file handling
+    ├── io (arff)   # loading ARFF dataset
+    └── stats (zscore)  # outlier detection using Z-distribution
+scikit-learn        # machine learning utilities and manifold learning
+    ├── preprocessing (StandardScaler)   # feature scaling
+    ├── decomposition (PCA)              # initial dimensionality reduction
+    ├── manifold (TSNE, Isomap)          # nonlinear manifold visualization
+    └── metrics (pairwise_distances, trustworthiness)  # performance metrics
 ```
 <!-- # ├── and └── -->
 
