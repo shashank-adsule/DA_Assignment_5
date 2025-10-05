@@ -15,7 +15,6 @@ Roll no.: DA25M005
     - Classes -> [Class1,...,Class14]
 
 
-
 ## Objective
 To visualize the intrinsic manifold structure of high-dimensional yeast data using:
 1. **t-SNE (t-Distributed Stochastic Neighbor Embedding)**
@@ -43,8 +42,17 @@ To make visualization interpretable:
 | **Isomap** | Preserves manifold geometry | Moderate | High |
 
 - for T-SNE **Perplexity = 50** gave the best visualization balance between local and global structures.
+
+![T-SNE](./assests/T-SNE.png)
+
+
+
 - for Isomap Found that reconstruction error decreased and stabilized around **neighbors = 50**, suggesting optimal manifold unfolding.
 
+![Isomap](./assests/Isomap.png)
+
+
+### comparision on diffrent version (both T-SNE and Isomap)
 |Version 1|Version 2|
 |:-:|:-:|
 |![class1](./assests/class1_check.png)|![class12 and class13](./assests/class12_13_check.png)|
